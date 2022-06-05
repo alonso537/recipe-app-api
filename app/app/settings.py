@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'psycopg2',
     'rest_framework',
+    'rest_framework.authtoken',
     'drf_yasg',
     'core',
     'user'
