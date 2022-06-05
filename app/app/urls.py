@@ -19,6 +19,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 schema_view = get_schema_view(
+
     openapi.Info(
         title="Recetas API",
         default_version='v1',
@@ -28,6 +29,8 @@ schema_view = get_schema_view(
         license=openapi.License(name="BSD License"),
     ),
     public=True,
+
+
 )
 
 urlpatterns = [
