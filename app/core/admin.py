@@ -27,6 +27,13 @@ class UserAdmin(BaseUserAdmin):
         ),
         (_('Important dates'), {'fields': ('last_login',)}),
     )
+    readonly_fields = ['last_login']
+    add_fieldsets = (
+        (None, {
+            'classes': ('wide',),
+            'fields': ('email', 'password1', 'password2', 'name', 'is_staff', 'is_superuser', 'is_active')
+        }),
+    )
     # list_filter = ['is_superuser', 'is_staff']
 
 
